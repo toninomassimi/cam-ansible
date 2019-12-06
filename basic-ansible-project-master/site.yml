@@ -1,0 +1,12 @@
+---
+
+  - name: Move a file
+    hosts: all
+    roles:
+      - common
+
+
+#   - name: Install apache
+#     hosts: all
+#     roles:
+#       - apache
