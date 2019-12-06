@@ -1,0 +1,5 @@
+[application]
+9.30.188.11 ansible_ssh_pass=Ton18max!
+[database]
+9.30.188.11 ansible_ssh_pass=Ton18max!
+localhost ansible_connection=local

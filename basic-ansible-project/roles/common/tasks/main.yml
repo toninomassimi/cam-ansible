@@ -1,0 +1,9 @@
+---
+  - name: check if source is present
+    stat:
+      path: '{{src}}'
+    register: src_result
+
+  - name: move file from src to destination
+    command: mv {{src}} {{dstn}}
+    when: src_result.stat.exists

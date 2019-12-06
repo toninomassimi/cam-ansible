@@ -1,5 +1,0 @@
-[application]
-9.30.210.91 ansible_ssh_pass=Passw0rd@123
-[database]
-9.30.1.49 ansible_ssh_pass=Passw0rd@123
-localhost ansible_connection=local
