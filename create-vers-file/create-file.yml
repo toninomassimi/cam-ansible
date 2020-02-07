@@ -1,0 +1,13 @@
+- name: This job create a file that contains the version of CAM service instance
+  hosts: all
+  remote_user: root
+  vars_files:
+    - variable_test.yml
+
+  tasks:
+    - name: Create a file called 'service-version.txt' with the content '1.0.0.0 .
+      copy:
+        content: "1.0.0.0, {{test}}, on Ansible!"
+        dest: ~/service-version.txt
+  become: true
+  #become_method: sudo
